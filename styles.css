@@ -6,11 +6,46 @@ body{
 
 .parent{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1{
     background-color: yellow;
     width: 50%;
     text-align: center;
+}
+
+p{
+    background-color: yellow;
+    width: 80%;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.child{
+    background-color: yellow;
+    height: auto;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ch {
+    background-color: lime;
+    color: white;
+     flex: 1 1 calc(50% - 10px); 
+    box-sizing: border-box; 
+    padding: 60px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.ch:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
