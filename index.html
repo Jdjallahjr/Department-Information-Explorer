@@ -26,14 +26,25 @@
             Libero atque ad perspiciatis, inventore rerum excepturi ducimus aliquid.
         </p>
         <div class="child">
-            <div class="ch" id="ch1"> Architecture</div>
-            <div class="ch" id="ch2"> Education</div>
-            <div class="ch" id="ch3"> Engineering</div>
-            <div class="ch" id="ch4"> Law</div>
-            <div class="ch" id="ch5"> Medicine</div>
-            <div class="ch" id="ch6"> Science</div>
+            <div class="ch" id="ch1" data-department="Architecture"> Architecture</div>
+            <div class="ch" id="ch2" data-department="Education"> Education</div>
+            <div class="ch" id="ch3" data-department="Engineering"> Engineering</div>
+            <div class="ch" id="ch4" data-department="Law"> Law</div>
+            <div class="ch" id="ch5" data-department="Medicine"> Medicine</div>
+            <div class="ch" id="ch6" data-department="Science"> Science</div>
         </div>
-        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h2 id="modalTitle">Department Information</h2>
+                <img id="modalImage" src="" alt="Department Image">
+                <p id="modalText">Click on a department to view details.</p>
+                <p id="modalPrograms"></p>  
+                <p id="modalFaculty"></p>
+            </div>
+            <button class="apply">Apply</button>
+        </div>
     </div>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+{
+    "departments": [
+      {
+        "id": 1,
+        "name": "Architecture",
+        "description": "Focuses on the art and science of designing buildings and other structures.",
+        "programs": ["Bachelor of Architecture", "Master of Urban Design"],
+        "faculty": ["Dr. Jane Smith", "Prof. John Doe"],
+        "image": "architecture.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Education",
+        "description": "Prepares students to become teachers and leaders in education.",
+        "programs": ["B.Ed", "M.Ed"],
+        "faculty": ["Dr. Emily Clark", "Dr. Robert Brown"],
+        "image": "education.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Engineering",
+        "description": "Offers programs in various engineering disciplines, focusing on innovation and practical solutions.",
+        "programs": ["Civil Engineering", "Mechanical Engineering", "Electrical Engineering"],
+        "faculty": ["Dr. Alice Johnson", "Prof. Michael Scott"],
+        "image": "engineering.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Law",
+        "description": "Provides education in legal systems, contracts, and international law.",
+        "programs": ["LLB", "LLM"],
+        "faculty": ["Dr. Sarah White", "Prof. Andrew Black"],
+        "image": "law.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Medicine",
+        "description": "Focuses on healthcare, patient treatment, and medical research.",
+        "programs": ["MBBS", "MD"],
+        "faculty": ["Dr. Richard Wilson", "Dr. Olivia Green"],
+        "image": "medicine.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Science",
+        "description": "Covers various fields such as physics, chemistry, and biology.",
+        "programs": ["B.Sc", "M.Sc"],
+        "faculty": ["Dr. Henry Adams", "Prof. Lisa Grey"],
+        "image": "science.jpg"
+      }
+    ]
+  }
+  
