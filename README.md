@@ -1,4 +1,4 @@
-#Department Information Explorer  
+# Department Information Explorer  
 
 ## Description  
 Department Information Explorer is a simple and interactive web application that allows users to explore different academic departments in an intuitive way. The project features a clean and user-friendly interface where users can click on department names to view detailed information, including descriptions, available programs, faculty members, and images.  
