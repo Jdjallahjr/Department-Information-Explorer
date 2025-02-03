@@ -10,6 +10,11 @@ This project demonstrates key web development skills, including **JavaScript eve
 - Interactive modal pop-ups for department details  
 - Lightweight and easy to update  
 
+## How to Run  
+1. Clone this repository
+2. Open `index.html` in your browser.  
+3. Click on any department to view details in the modal.
+
 ## Technologies Used  
 - HTML, CSS, JavaScript  
 - JSON for data storage  
