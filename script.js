@@ -1,33 +1,46 @@
 document.addEventListener("DOMContentLoaded", function() { 
     let departmentsData = [];
-
+    
+    document.body.classList.add('loading');
+    
     fetch("departments.json")
         .then(response => response.json())
         .then(data => {
             departmentsData = data.departments;
-
+            document.body.classList.remove('loading');
+            
             document.querySelectorAll(".ch").forEach(div => {
                 div.addEventListener("click", function(){
                     let departmentName = this.dataset.department; 
                     let department = departmentsData.find(dept => dept.name === departmentName);
-
+                    
                     if (department) {
                         document.getElementById("modalTitle").innerText = department.name;
                         document.getElementById("modalText").innerText = department.description;
                         document.getElementById("modalPrograms").innerText = "Programs: " + department.programs.join(", ");
                         document.getElementById("modalFaculty").innerText = "Faculty: " + department.faculty.join(", ");
-                        document.getElementById("modalImage").src = "images/" + department.image; 
+                        document.getElementById("modalImage").src = "images/" + department.image;
                         
-                        document.getElementById("modal").style.right = "0"; 
+                        document.getElementById("modal").style.right = "0";
+                        document.body.style.overflow = "hidden";
                     }
                 });
             });
         })
-        .catch(error => console.error("Error loading JSON:", error));
+        .catch(error => {
+            console.error("Error loading JSON:", error);
+            document.body.classList.remove('loading');
+        });
 
-    document.getElementById("closeModal").addEventListener("click", function () {
-        document.getElementById("modal").style.right = "-100%"; 
+    document.getElementById("closeModal").addEventListener("click", function() {
+        document.getElementById("modal").style.right = "-100%";
+        document.body.style.overflow = "auto";
+    });
+    
+    document.getElementById("modal").addEventListener("click", function(e) {
+        if (e.target === this) {
+            this.style.right = "-100%";
+            document.body.style.overflow = "auto";
+        }
     });
 });
-
-
